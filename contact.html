@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Konneh Electronics | Contact Us</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="page-body">
+
+    <!-- Header Navigation -->
+    <header>
+        <div class="nav-container">
+            <div class="logo-container">
+                <a href="index.html">
+                    <img src="Konneh Electronics logo.jpeg" alt="Konneh Electronics Logo">
+                </a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html" class="active">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Contact & Direct Message Section -->
+    <section class="container page-content">
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="contact-grid">
+            
+            <!-- Direct Web Message Form -->
+            <div class="contact-box">
+                <h3 style="margin-bottom: 1rem;">Send Us a Direct Message</h3>
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" placeholder="Enter your name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="service">Inquiry Type</label>
+                        <input type="text" id="service" placeholder="e.g. Phone Repair, Buying Accessories" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" placeholder="How can we help you?" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-whatsapp" style="width: 100%; border: none; cursor: pointer;">Send via WhatsApp</button>
+                </form>
+            </div>
+
+            <!-- Store Location & Details -->
+            <div class="contact-box">
+                <h3 style="margin-bottom: 1rem;">Business Information</h3>
+                <p style="color: var(--text-muted); margin-bottom: 1rem;">
+                    <strong>Location:</strong> New Israel First Junction, Johnsonville, Montserrado, Liberia
+                </p>
+                <p style="color: var(--text-muted); margin-bottom: 1rem;">
+                    <strong>Opening Hours:</strong> Monday – Saturday: 8:00 AM – 8:00 PM
+                </p>
+                <p style="color: var(--text-muted); margin-bottom: 1.5rem;">
+                    <strong>WhatsApp Support:</strong> Chat live with us on WhatsApp for fast product ordering, repair appointments, or general inquiries.
+                </p>
+                <a href="https://wa.me/231779116693" target="_blank" class="btn btn-whatsapp">
+                    Chat with us on WhatsApp
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/231779116693?text=Hello%20Konneh%20Electronics,%20I%20have%20a%20question!" class="whatsapp-float" target="_blank" title="Chat on WhatsApp">
+        <svg style="width:32px;height:32px;fill:white;" viewBox="0 0 24 24">
+            <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.842-.981z"/>
+        </svg>
+    </a>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Konneh Electronics / Konneh Business Center. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

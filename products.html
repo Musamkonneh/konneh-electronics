@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Konneh Electronics | Products</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="page-body">
+
+    <!-- Header Navigation -->
+    <header>
+        <div class="nav-container">
+            <div class="logo-container">
+                <a href="index.html">
+                    <img src="Konneh Electronics logo.jpeg" alt="Konneh Electronics Logo">
+                </a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html" class="active">Products</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Products Gallery Section -->
+    <section class="container page-content">
+        <h2 class="section-title">Our Inventory</h2>
+        
+        <!-- Dynamic Product Grid loaded from products.json via script.js -->
+        <div id="product-grid" class="grid">
+            <p style="color: var(--text-muted); text-align: center; grid-column: 1 / -1;">Loading inventory...</p>
+        </div>
+    </section>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/231779116693?text=Hello%20Konneh%20Electronics,%20I%20have%20a%20question!" class="whatsapp-float" target="_blank" title="Chat on WhatsApp">
+        <svg style="width:32px;height:32px;fill:white;" viewBox="0 0 24 24">
+            <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.842-.981z"/>
+        </svg>
+    </a>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Konneh Electronics / Konneh Business Center. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

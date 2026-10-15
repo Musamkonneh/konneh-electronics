@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "title": "Wireless Earbuds & Headphones",
+    "image": "image1.jpg",
+    "description": "Premium Bluetooth earbuds and over-ear wireless headphones with active noise isolation and dynamic bass sound."
+  },
+  {
+    "id": 2,
+    "title": "LED Cat-Ear Headphones",
+    "image": "image2.webp",
+    "description": "Custom colorful over-ear headphones featuring glowing LED cat ears, built-in controls, and soft cushioned earcups."
+  },
+  {
+    "id": 3,
+    "title": "Pro Gaming Headsets",
+    "image": "website background image.jpg",
+    "description": "Surround sound gaming headsets equipped with noise-canceling detachable microphones and ambient RGB lighting effect."
+  },
+  {
+    "id": 4,
+    "title": "Phone cases",
+    "image": "phone case.jpeg",
+    "description": "Beautiful phone case that make your phone stand out bold, elegant stylish and gives it extra protection."
+  },
+  {
+    "id": 5,
+    "title": "Bluetooth Speaker",
+    "image": "bluetooth speaker.jpeg",
+    "description": "Very loud speaker good for living room set and hosting home parties."
+  }
+]

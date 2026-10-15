@@ -34,7 +34,7 @@ body {
     flex-grow: 1;
 }
 
-/* Navigation */
+/* Navigation Header */
 header {
     background: rgba(10, 12, 16, 0.95);
     position: fixed;
@@ -52,6 +52,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 0.8rem 2rem;
+    position: relative;
 }
 
 .logo-container img {
@@ -76,6 +77,27 @@ nav a {
 nav a:hover,
 nav a.active {
     color: var(--primary-red);
+}
+
+/* Mobile Menu Toggle Button Icon */
+.mobile-menu-btn {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 1001;
+}
+
+.mobile-menu-btn .bar {
+    height: 3px;
+    width: 100%;
+    background-color: var(--text-light);
+    border-radius: 2px;
+    transition: all 0.3s ease;
 }
 
 /* Hero Section */
@@ -324,14 +346,35 @@ footer {
     margin-top: auto;
 }
 
+/* Responsive Media Queries */
 @media (max-width: 768px) {
+    .mobile-menu-btn {
+        display: flex;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: rgba(10, 12, 16, 0.98);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        padding: 1.5rem 0;
+        gap: 1.5rem;
+        text-align: center;
+    }
+
+    nav ul.nav-active {
+        display: flex;
+    }
+
     .contact-grid {
         grid-template-columns: 1fr;
     }
+
     .hero h1 {
         font-size: 2.2rem;
-    }
-    nav ul {
-        display: none;
     }
 }

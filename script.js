@@ -1,13 +1,23 @@
 const WHATSAPP_PHONE = "231779116693";
 
 document.addEventListener("DOMContentLoaded", () => {
-    // 1. If on products page, fetch and render items from products.json
+    // 1. Mobile Navigation Toggle Handler
+    const menuBtn = document.getElementById("mobile-menu-btn");
+    const navList = document.getElementById("nav-list");
+
+    if (menuBtn && navList) {
+        menuBtn.addEventListener("click", () => {
+            navList.classList.toggle("nav-active");
+        });
+    }
+
+    // 2. Fetch and Render Products on Products Page
     const productGrid = document.getElementById("product-grid");
     if (productGrid) {
         fetchProducts();
     }
 
-    // 2. If contact form is present, attach submission handler
+    // 3. Attach WhatsApp Form Submission Handler
     const contactForm = document.getElementById("contactForm");
     if (contactForm) {
         contactForm.addEventListener("submit", sendToWhatsApp);

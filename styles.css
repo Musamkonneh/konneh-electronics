@@ -27,7 +27,7 @@ body {
 
 /* Page Spacing for Inner Pages */
 .page-body {
-    padding-top: 80px;
+    padding-top: 90px;
 }
 
 .page-content {
@@ -55,10 +55,15 @@ header {
     position: relative;
 }
 
+/* Bigger & Clearer Logo Settings */
 .logo-container img {
-    height: 45px;
+    height: 60px;
     width: auto;
     display: block;
+    object-fit: contain;
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
+    filter: drop-shadow(0 2px 4px rgba(0,0,0,0.5));
 }
 
 nav ul {
@@ -346,10 +351,19 @@ footer {
     margin-top: auto;
 }
 
-/* Responsive Media Queries */
+/* Mobile Media Queries */
 @media (max-width: 768px) {
+    .nav-container {
+        justify-content: flex-start;
+        gap: 1.5rem;
+    }
+
     .mobile-menu-btn {
         display: flex;
+    }
+
+    .logo-container img {
+        height: 52px;
     }
 
     nav ul {
